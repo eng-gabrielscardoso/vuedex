@@ -4,7 +4,11 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [A lançar]
 
+## [1.0.1] - 2022-02-22
 
+### Adicionado
+
+- Adicionado ficheiro de configuração de deploy no Netlify
 ## [1.0.0] - 2022-02-21
 
 Primeira versão estável da aplicação
