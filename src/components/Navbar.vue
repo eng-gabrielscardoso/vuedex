@@ -1,9 +1,10 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="#">
+      <a class="navbar-item" href="/">
+        <span class="is-hidden">Vuedex</span>
         <figure>
-          <img src="../assets/logo.png"> 
+          <img src="../assets/logo.png" alt="Vuedex Logotipo" title="Vuedex"> 
         </figure>
       </a>
 
@@ -11,17 +12,18 @@
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
+        <span class="is-hidden">Vuedex</span>
       </a>
     </div>
 
     <div id="navbarBasicExample" :class="{'navbar-menu': true, 'is-active': showNav}">
       <div class="navbar-start">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item has-text-primary has-text-weight-bold" href="/">
           Vuedéx
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
-            Opções
+            Acerca do projeto
           </a>
 
           <div class="navbar-dropdown">
@@ -44,9 +46,9 @@
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <input class="input is-primary mr-1" type="text" name="searchInput" id="searchInput" placeholder="Buscar Pokemon" v-model="query">
+          <input class="input is-primary mr-1" type="text" name="searchInput" id="searchInput" placeholder="Buscar Pokemon" aria-label="Buscar Pokemon" v-model="query">
           <div class="buttons">
-            <button class="button is-primary" @click="getQuery()">Pesquisar</button>
+            <button class="button is-primary is-fullwidth" @click="getQuery()">Pesquisar</button>
           </div>
         </div>
       </div>
@@ -77,5 +79,9 @@ export default {
 </script>
 
 <style>
-
+  @media screen and (max-width: 1024px) {
+    input[type=text] {
+      margin-bottom: 6px !important;
+    }
+  }
 </style>
