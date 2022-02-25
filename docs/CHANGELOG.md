@@ -4,6 +4,13 @@ O formato é baseado no [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [A lançar]
 
+## [1.2.0] - 2022-02-25
+
+### Adicionado
+
+- Adicionadas meta tags de SEO
+- Novo modelo de navbar
+
 ## [1.0.1] - 2022-02-22
 
 ### Adicionado
